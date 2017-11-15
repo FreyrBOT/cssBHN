@@ -1,0 +1,193 @@
+{
+
+#room-name {
+	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+	background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+	color:transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	}
+#footer {
+	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.45) 0,rgba(0, 0, 0, 0.75) 100%);
+}
+#footer-user .info.showing .meta .bar .progress {
+	background:#2D9400;
+}
+#footer-user .info.showing .meta .level .label {
+	color:#EFEFEF;
+}
+#footer-user .info.showing .meta .level .value {
+	color:#EFEFEF;
+}
+#footer-user .info.is-staff.showing .name {
+	color: #0EB006;
+}
+#footer .shop-button {
+	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.45) 0,rgba(0, 0, 0, 0.75) 100%);
+}
+#footer-user .info.showing {
+	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.55) 0,rgba(0, 0, 0, 0.85) 100%);
+}
+}
+#woot { 
+	border-radius: 100px 0 0 100px ;
+}
+#woot .bottom { 
+	border-radius: 0 0 0 100px;
+}
+#woot.selected, #woot .bottom, #woot.crowd-response.disabled.active .bottom {
+	background: linear-gradient(to top,#6FE514,rgba(74, 169, 0, 1) 100%);
+}
+#meh { 
+	border-radius: 0 100px 100px 0;
+}
+#meh .bottom { 
+	border-radius: 0 0 100px 0;
+}
+#meh.selected, #meh .bottom, #meh.crowd-response.disabled.active .bottom {
+	background: linear-gradient(to top,#EA2A2A,rgba(189, 0, 0, 1) 100%);
+}
+#grab.selected, #grab .bottom, #grab.crowd-response.disabled.active .bottom {
+	background: linear-gradient(to top,#AA74FE,rgba(102, 28, 217, 1) 100%);
+}
+#dj-button.is-wait, #dj-button.is-leave, #dj-button.is-quit, #dj-button.is-locked, #dj-button.is-full {
+	opacity: 0.85;
+}
+#dj-button, #dj-button.is-leave { 
+	border-radius: 100px 100px 100px 100px;
+	background: linear-gradient(to top,#3A3A3A,rgba(34, 34, 34, 1) 100%);
+}
+#dj-button .left {
+	border-radius: 100px 100px 100px 100px;
+	background: linear-gradient(to top,#14C0F3,rgba(0, 152, 196, 1) 100%);
+}
+
+#woot:before {
+    content: url(https://cdn.radiant.dj/rcs/emotes/img/rosie.gif);
+    position: absolute;
+    top: 10px;
+    left: 265px;
+}
+
+
+/* Mostrar status de votos quando é DJ */
+#vote .crowd-response.disabled .bottom {
+  top: 60px;
+  opacity: 1;
+  border-radius: 0 0 50px 50px;
+}
+
+#vote {
+	width: 267px !important;
+}
+
+#PPDlBtn  .bottom,
+#woot .bottom,
+#grab .bottom,
+#meh  .bottom {
+	opacity: 0;
+}
+
+#vote .crowd-response,
+.bottom {
+	transition: all .4s linear;
+	-webkit-transition: all .4s linear;
+}
+
+#vote .crowd-response {
+	color: #fff;
+	border: none;
+	border-radius: 100%;
+	margin-right: 5px;
+	margin-left: 0 !important;
+	background: transparent;
+	width: 84px;
+	height: 84px;
+	bottom: 10px;
+	-webkit-box-shadow: inset 0 0 1px 1px rgba(255,255,255,.5);
+	        box-shadow: inset 0 0 1px 1px rgba(255,255,255,.5);
+}
+
+#vote .crowd-response:hover {	cursor: pointer !important; }
+
+#vote .crowd-response.selected {
+	color: #fff;
+}
+
+#vote .crowd-response .top .label {
+	font-weight: normal;
+}
+
+#vote #woot:hover {
+	background: rgba(144, 173, 47, .5);
+}
+
+#vote #meh:hover {
+	background: rgba(196, 46, 59, .5);
+}
+
+#vote #PPDlBtn:hover {
+    background: rgba(128, 128, 128, 0.5);
+}
+
+#vote .crowd-response:hover .bottom {
+	opacity: 1;
+	top: 60px;
+	border-radius: 0 0 100% 100%;
+}
+
+#vote .crowd-response .top {
+	top: 23px;
+	left: 0px !important;
+}
+
+.votes-rs {
+    top: -18px;
+    z-index: -1 !important;
+    border-bottom: none !important;
+    background: -webkit-linear-gradient(#000, transparent) !important;
+    background: -o-linear-gradient(#000, transparent) !important;
+    background: linear-gradient(#000, transparent) !important;
+}
+
+.votes-rs .voteslist {
+	height: 160px;
+}
+
+.voteslist p {
+	padding: 3px 0;
+    text-shadow: 0 1px 3px rgba(0,0,0,.8);
+}
+
+/* Cores personalizadas
+-------------------------------------------------------------------------------*/
+
+/* Botao Woot */
+#woot .bottom, #woot.selected {
+	background: -webkit-linear-gradient(top left, #90ad2f, transparent) !important;
+	background: -o-linear-gradient(top left, #90ad2f, transparent) !important;
+	background: linear-gradient(to bottom right, #90ad2f, transparent) !important;
+}
+
+/* Botao Adicionar Música a playlist */
+#grab .bottom, #grab.selected {
+	/*background: -webkit-linear-gradient(top left, #42a5dc, transparent) !important;
+	background: -o-linear-gradient(top left, #42a5dc, transparent) !important;
+	background: linear-gradient(to bottom right, #42a5dc, transparent) !important;*/
+    background: linear-gradient(to bottom right, #eb881d, transparent) !important;
+    background: -webkit-gradient(linear, left top, right bottom, from(#eb881d), to(transparent)) !important;
+}
+
+/* Botao Meh */
+#meh .bottom, #meh.selected {
+	background: -webkit-linear-gradient(top left, #c42e3b, transparent) !important;
+	background: -o-linear-gradient(top left, #c42e3b, transparent) !important;
+	background: linear-gradient(to bottom right, #c42e3b, transparent) !important;
+}
+
+/* Botao .MP3 */
+#PPDlBtn .bottom, #PPDlBtn.selected {
+	background: -webkit-linear-gradient(top left, #d3d3d3, transparent) !important;
+	background: -o-linear-gradient(top left, #d3d3d3, transparent) !important;
+	background: linear-gradient(to bottom right, #d3d3d3, transparent) !important;
+}
